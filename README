@@ -1,0 +1,21 @@
+I was recently talking about my TW coding excercise and checked and 
+found it in my emails. So I'm sharing it for posterity. I hope TW 
+doesn't still send out DMCA takedown notices for these. ;p
+
+(I added this README, .gitignore and had to bump the compiler version
+from 1.6 to 1.7 in the pom. Otherwise this is unchanged.)
+
+From my original email when I sent this in on 28.03.2011:
+
+salestaxes.Main is the main entry-point to the application. It tries
+to parse a given input string to create Items to add to a
+ShoppingCart. The cart is then printed out with a ReceiptPrinter. The
+taxes get calculated when an item is added to the cart.
+
+MainIntegrationTest covers the 3 examples given in the description.
+
+The problem description is a bit inconsistent in that there are two
+cases where the input name of a product doesn't match the name in the
+expected output. I solved this by hard-coding the name-product
+mappings in salestax.input.ProductDefinitions. In a real project I'd
+prefer to ask for clarification on in and output formats.
